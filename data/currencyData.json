@@ -1,0 +1,22 @@
+[
+    {
+        "code": "ZAR",
+        "region": "South Africa",
+        "flag": "/flags/za.svg"
+    },
+    {
+        "code": "USD",
+        "region": "United States",
+        "flag": "/flags/us.svg"
+    },
+    {
+        "code": "GBP",
+        "region": "United Kingdom",
+        "flag": "/flags/uk.svg"
+    },
+    {
+        "code": "EUR",
+        "region": "European Union",
+        "flag": "/flags/euro.svg"
+    }
+]

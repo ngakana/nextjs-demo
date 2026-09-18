@@ -1,0 +1,61 @@
+@use "../abstracts/colours.scss" as vars;
+@use "../abstracts/mixins.scss" as mixins;
+
+.select {
+    @include mixins.flexColumn();
+    width: 90%;
+    background-color: vars.$actionDefault;
+
+    .input {
+        @include mixins.flexRow(0.5rem, center, space-between);
+        width: 100%;
+        padding: 20px 20px 20px 10px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        cursor: pointer;
+
+        span {
+            margin-right: auto;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: vars.$actionHover;
+            box-shadow: 0 0 0 2px rgba(0, 118, 255, 0.2);
+        }
+    }
+
+    .options {
+        @include mixins.flexColumn(0.5rem, center, flex-start);
+        position: relative;
+        width: 100%;
+
+        .option {
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+    
+            &:hover {
+                transform: scale(1.05);
+            }
+    
+            &.selected {
+                border: 2px solid vars.$actionActive;
+                border-radius: 4px;
+            }
+    
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+    
+            span {
+                margin-top: 0.5rem;
+                font-size: 0.9rem;
+                text-align: center;
+            }
+        }
+    }
+}
