@@ -13,11 +13,7 @@ Next.js is a <strong>React-based web development framework</strong> built by Ver
 - Automatic Image, Font and Script optimization
 - Server actions
 
-## Development environment setup
-### Install Node.js
-Windows
-```powershell
-winget install
-```
+## Demo UI Design
+![Screenshot showing app dark theme](dark-theme.png)
+![Screenshot showing app dark theme](light-theme.png)
 
-### Check 
