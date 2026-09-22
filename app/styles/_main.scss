@@ -1,1 +1,10 @@
-@import "./base/reset";
+@use "./base/reset";
+@use "./theme";
+
+body {
+    background: var(--background-secondary);
+    height: "100vh";
+    display: "flex";
+    align-items: "center";
+    justify-content: "center";
+}

@@ -1,5 +1,3 @@
-@use "../abstracts/colours.scss" as *;
-
 /* Box sizing rules */
 *,
 *::before,
@@ -72,66 +70,4 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
-}
-
-.dark {
-    .primary {
-        background-color: $primary-dark;
-    }
-
-    .secondary {
-        background-color: $secondary-dark;
-    }
-
-    .text {
-        color: $text-dark;
-    }
-
-    .action {
-        color: $text-dark;
-        background-color: $action-default-dark;
-
-        &:hover {
-            background-color: $action-hover-dark;
-        }
-
-        &:focus, &:active {
-            background-color: $action-active-dark;
-        }
-
-        &:disabled {
-            background-color: $action-disabled-dark;
-        }
-    }
-}
-
-.light {
-    .primary {
-        background-color: $primary-light;
-    }
-
-    .secondary {
-        background-color: $secondary-light;
-    }
-
-    .text {
-        color: $text-light;
-    }
-
-    .action {
-        color: $text-light;
-        background-color: $action-default-light;
-
-        &:hover {
-            background-color: $action-hover-light;
-        }
-
-        &:focus, &:active {
-            background-color: $action-active-light;
-        }
-
-        &:disabled {
-            background-color: $action-disabled-light;
-        }
-    }
 }

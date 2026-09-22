@@ -1,0 +1,37 @@
+@use "./abstracts/colours.scss" as *;
+
+:root {
+    --background-primary: #{$primary-dark};
+    --background-secondary: #{$secondary-dark};
+    --text-primary: #{$text-dark};
+    --accent: #{$accent-dark};
+    --action-default: #{$action-default-dark};
+    --action-hover: #{$action-hover-dark};
+    --action-active: #{$action-active-dark};
+    --action-loading: #{$action-loading-dark};
+    --action-disabled: #{$action-disabled-dark};
+}
+
+[data-theme="dark"] {
+    --background-primary: #{$primary-dark};
+    --background-secondary: #{$secondary-dark};
+    --text-primary: #{$text-dark};
+    --accent: #{$accent-dark};
+    --action-default: #{$action-default-dark};
+    --action-hover: #{$action-hover-dark};
+    --action-active: #{$action-active-dark};
+    --action-loading: #{$action-loading-dark};
+    --action-disabled: #{$action-disabled-dark};
+}
+
+[data-theme="light"] {
+    --background-primary: #{$primary-light};
+    --background-secondary: #{$secondary-light};
+    --text-primary: #{$text-light};
+    --accent: #{$accent-light};
+    --action-default: #{$action-default-light};
+    --action-hover: #{$action-hover-light};
+    --action-active: #{$action-active-light};
+    --action-loading: #{$action-loading-light};
+    --action-disabled: #{$action-disabled-light};
+}
